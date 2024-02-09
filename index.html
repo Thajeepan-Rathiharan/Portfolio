@@ -1,0 +1,132 @@
+<!-- The DOCTYPE element at the start of the HTML tells the browser that the document that it loads up is a HTML. -->
+<!DOCTYPE html>
+
+<!-- <html> </html> Tells the browser what is inside the html such as the element below that tells it the language the text on the page(s) needs to be is in English and is written 'en'. -->
+<html lang="en">
+
+<!-- The <head> element is where additional information about the page is put in such as the adding external css scripts, external fonts from sites such as Google fonts and the title of the page that will appear on the tab, alongside properties of the size the content can be viewed. -->
+<head>
+
+<!-- The <title> tag shows the title of the HTML document on the broswer tab. -->
+<title>Home page</title>
+
+<!-- The charset <meta> tag tells the browser to reword the code into text that users can read. -->
+<meta charset="UTF-8">
+
+<!-- The name <meta> tag tells the broswer the measurements of the page so that it doesn't have a bad structure with everything all over the place. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- The name <meta> tag tells the browser a short description of what the page contains. -->
+<meta name="description" content="Homepage for my portfolio" />
+
+<!-- The <link> element is used here to link (as the name suggests) stylesheets from other external sources such as webpages to be used on this page, and this one is using fonts from Google fonts. -->  
+
+<!-- The css for this page is in an external stylesheet and is linked to this HTML via the <link> element and identified via the href locating the css file and finding the css stylesheet within the folder and the broswer adds it to this HTML to make the basic HTML have a better structure for the text and images. --> 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- A href elements lets the browser know what page the user would get taken to when clicking on the link. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The </head> tells the browser that the <head> element has come to an end. -->
+</head>
+
+<!-- The <body> element tells the browser what needs to be shown on the page, which in this case will be text and images. -->
+<body>
+
+<!-- Navbar screen elements for desktop screens-->
+
+<!-- The <div> element is used to group content placed within the <div> into one container.
+  The class is used to give the <div> it's unique name so that it can be structured/ layed out better using css. --> 
+<div class="w3-top">
+    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+
+      <!-- <a> is an anchor element allows the browser to link another page to this page but instead of going to another page, the element from the other page will be linked to this page which in this case is a button element.  -->
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <!-- The javascript function at the end of the line after href:"javascript;void(0);" is telling the browser that the navigation menu bar becomes a toggle navigation menu, given by the title, it will be in the form of a burger menu style. 
+           It also states that the menu bar will appear 'onclick', which in other words means when the user(s) click the menu bar that the navigation menu bar will open. 
+           However, this burger style navigation menu will only appear to users when viewing the website on smaller screens. -->
+
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
+      <a href="contactme.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Me</a>
+    
+    <!-- </div> tells the broswer that this is the end of this <div> container. -->
+    </div>
+
+  <!-- Navbar screen elements for small screens -->
+
+  <!-- An id element gives a specific style to the element it is given to. -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+  
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+    <a href="contactme.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
+  </div>
+</div>
+
+<!-- Header elements-->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+
+  <!-- <h> is used to tell the broswer that the text within <h> and </h> is headings for the page, there is a class added on to it that till be used in javascript to make the text fade in and out when scrolling down or up the page. -->
+  <h1 class="w3-margin w3-jumbo">Thajeepan Rathiharan</h1>
+</header>
+
+<!-- First Grid elements-->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="text tablet-text smaller-screen-text">Welcome to my portfolio</h1>
+      <h5 class="w3-padding-32 text tablet-text smaller-screen-text">This is my online portfolio where I will be posting my work from university and future projects.</h5>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer element-->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+    <div class="w3-xlarge w3-padding-32">
+      <a href="https://www.facebook.com/profile.php?id=100009232941477" class="fa fa-facebook-official w3-hover-opacity"></a>
+      <a href="https://www.instagram.com/thajaht/" class="fa fa-instagram w3-hover-opacity"></a>
+      <a href="https://twitter.com/thajee2002" class="fa fa-twitter w3-hover-opacity"></a>
+      <a href="https://www.linkedin.com/in/thajeepan-rathiharan-188349224/" class="fa fa-linkedin w3-hover-opacity"></a>
+   </div>
+
+   <!-- The <p> element tells the broswer that what comes after this is a paragraph and is used to have text shown. -->  
+    <p>Portfolio website by Thajeepan Rathiharan</p>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+
+  <script>
+    // The browser gets the current URL the user(s) on with the first line.
+    var currentUrl = window.location.href;
+  
+    // Then the browser checks which tab corresponds to the current URL and add the 'w3-white' class for highlighting to let the user(s) know what page they are on.
+    if (currentUrl.includes("index.html")) {
+      document.getElementById("home").classList.add("w3-white");
+    } else if (currentUrl.includes("aboutme.html")) {
+      document.getElementById("about").classList.add("w3-white");
+    } else if (currentUrl.includes("contactme.html")) {
+      document.getElementById("contact").classList.add("w3-white");
+    }
+  
+  // The function below is for when users toggle the menu on small screens, the menu bar will show when the bar is clicked on, and makes the menu bar disappear when clicked on again with the menu isn't needed.
+  // Another thing with the function is that is uses the Id element "navDemo", meaning that elements that have that Id in this HTML code will be affected by this javascript function, which in this case is the div element for the burger navigation menu bar that is made to appear for users that view the website on smaller screens.
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+  // The function is saying that for every element that has the Id "navDemo if the element isn't activated that it shows the menu, and if it is already shown, the shown menu bar gets closed, if not replaced by making it disappear.
+}  
+  </script>    
+
+<!-- The </body> ends <body> element telling the broswer that's it for the content on the page. -->
+</body>
+
+<!-- The </html> tag ends what the <html> tag started, and in this case tells the browser that's the end of what it needs to load on the page. --> 
+</html>

@@ -1,0 +1,507 @@
+/* Mobile screen page settings for viewing the website. */
+@media screen and (min-width: 360px){
+/* @media screen is used to change the content on the screen of a web page depending on the device width. An example is with this website the content will be bigger on desktop, but smaller on a mobile phone or tablet.
+   So that they don't look completely different, @media screen enables the users to be able to have the right sizes and shapes showing via having different values for the element, so when it goes from a desktop view to mobile view the only thing changing will be the screen size and not the content.
+   360px (pixels) is chosen as the minimum width for the device because the smallest mobile phone screen size in terms of width from the devices on the Google Inspect tool is 360px (pixels). */   
+
+body,h1,h2,h3,h4,h5,h6 {
+   font-family: "Lato", sans-serif}
+/* Body elements and all <h> elements from 1 to 6 have been given the font-family "Lato", but if the browser(s) does not support it, they will use "sans-serif" font. */
+  
+.w3-bar,h1,button {
+   font-family: "Montserrat", sans-serif}
+/* Elements with the class names w3-bar, h1 and button are given the "Monsterrat" font, but if the browser(s) does not support it, the "sans-serif" font is given to the text on the page. */
+     
+.w3-top{
+    top:0;
+}
+/* Elements with the class name w3-top is given an attribute of 0 meaning that it will not be moved up from its original. current position. */
+  
+.w3-card-2{
+   box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+}
+/* Elements with the class name w3-card-2 is given a shadow around it's container aka the box and given colour values to it using rgba values. */
+     
+.w3-left-align{
+   text-align:left;
+}
+/* Elements with the class name w3-left-align is given the text-align attribute to align text/ content with this tag to the left. */   
+     
+.w3-large{
+   font-size:18px;
+}
+/* Elements that have the w3-large class element have the size of their font increased by 18 (px) pixels. */   
+  
+.w3-bar-item{
+   width:100%;
+   display:block;
+   padding:8px 16px;
+   text-align:left;
+   border:none;
+   white-space:normal;
+   float:none;
+   outline:0;
+}
+/* Elements that contain the w3-bar-item class have been given a width of 100% so it takes up the full space given, given space around the element and its container using padding, makes the element not stand out as the outline is set to 0. Float set to none, meaning it will just be placed where it is told to. Border is set to none which means there is no border around the element,
+   white-space normal allows text to wrap around the element. */   
+  
+.w3-button{
+   width:100%;
+}
+/* Elements with the w3-button class have their widths set to the maximum via the 100%.*/
+  
+.w3-hide-medium{
+   display:none;
+}
+/* Elements with the w3-hide-medium class has the display set to none so that it remains invisible when viewed at a medium screen size such as a tablet.*/   
+  
+.w3-hide-large{
+   display:none;
+}
+/* Elements that possess the w3-hide-large class have their display set to none so they remain invisible when viewed at a large screen size such as a desktop.*/   
+     
+.w3-right{
+   float:right;
+}
+/* Elements with the class w3-right have the element floated to the right which means the element is placed to the right of its container and has text and inline elements wrapped around it. */   
+     
+.w3-padding-large{
+   padding:12px 24px;
+}
+/* Elements with the class w3-padding-large have been given space around the top and bottom of a content and its containers box by 12px, and space around the left and right of the element via 24px with the padding attribute. */   
+     
+.w3-hover-white:hover{
+   color:#000;
+   background-color:#fff;
+}
+/* Elements with the class w3-hover-white:hover is given the colour attribute to give the element colour, then also given background colour for the element too.
+     Colour would only work with it being spelt the American way. */   
+     
+.w3-red{
+   background-color:#f44336;     
+}
+/* Elements that have the w3-red class have been given a background colour which in this case is red as the class name indicates. */
+  
+.w3-white{
+   background-color:#fff;
+}
+/* Elements that have the w3-white class have been given a background colour which in this case is white as the class name indicates. */
+  
+.w3-hide-small{
+   display:none;
+}
+/* Elements with the class w3-hide-small are made invisible using the display attribute being set to none. */
+  
+.w3-hide{
+   display:none;
+}
+/* Elements with the class name w3-hide are made invisible by the display attribute being set to none which means it won't be visible. */
+  
+.w3-large{
+   font-size:18px;
+}
+/* Elements with the class name w3-large has their font size increased by 18px (pixels). */
+     
+.w3-center{
+   text-align:center;
+}
+/* Elements with the class w3-center has the text put in the center of the container using the text-align: center attribute. */
+     
+.w3-margin{
+   margin:16px;
+}
+/* Elements with the w3-marging class is given a margin of 16px (pixels) which creates space around the element(s) with this class name. */   
+  
+.w3-jumbo{
+   font-size:64px;
+}
+/* Elements with the class name w3-jumpo have their font increased by 64px (pixels). */    
+  
+.w3-padding-64{
+   padding-top:64px;
+}
+/* Elements with the class name w3-padding-64 creates space of 64px (pixels) between the top of content such as text and its containers border. */   
+  
+.w3-content{
+   max-width:980px;
+}
+/* Elements with the class name w3-content have the max-width of the element increased to 980px (pixels). */   
+  
+.w3-padding-32{
+   padding-top:32px;
+}
+/* Elements with the class name w3-padding-32 creates space of 32px (pixels) between the top of content such as text and its containers border. */
+     
+.w3-opacity-max{
+   opacity:0.25;
+}
+/* Elements with the class name w3-opacity-max is made less visible, meaning that it is 25% see-through. */
+  
+.w3-opacity-min{
+   opacity:0.75;
+}
+/* Elements with the class name w3-opacity-max is made less visible, meaning that it is 75% see-through. */
+  
+.w3-xlarge{
+   font-size:24px;
+}
+/* Elements with the class name w3-xlarge have their font increased by 24px (pixels). */ 
+  
+.w3-light-grey{
+   background-color: #616161;
+}
+/* Elements that have the w3-light-grey class have been given a background colour which in this case is light grey as the class name indicates. */  
+
+.myPhoto{
+   width: 100%;
+}
+/* This class is here to adjust the image size on mobile phone screens so that it fits the screen size better instead of being oversized and spreading out to the original image size, which would be bigger than the mobile phone/ tablet screen size.
+   In other words the width being set to 100% allows the image to take up the full amount of space that it has around it, which is benefitial when viewing on a smaller screen as the image may be small if set to a width of a smaller value like 50%. */
+
+.smaller-screen-text{
+   text-align:center;
+}
+/* Elements with the smaller-screen-text class name will have their line of text aligned in the center instead of starting from the left or right looking uneven. This is mainly to support the text on smaller screens such as a mobile phone so the text doesn't look out of place. */
+
+.smaller-screen-list{
+   margin-right: 40px; 
+}
+/* Elements with the smaller-screen-list class name will have that element be pushed away from the right side of the screen by 40px (pixels). 
+   This is done due to the text in the section with the unordered list is too far to the right side of the screen on a mobile screen, so margin-right was used to push it away from the right and be aligned with the other text in the middle. */
+}
+/* This closing curly brace bracket states the end of the css settings for elements when it's viewed on a screen resolution of 400px (pixels) or more. */ 
+
+/* Tablet screen page settings for viewing the website. */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+   /* @media screen is used to change the content on the screen of a web page depending on the device width. An example is with this website the content will be bigger on desktop, but smaller on a mobile phone or tablet.
+      So that they don't look completely different, @media screen enables the users to be able to have the right sizes and shapes showing via having different values for the element, so when it goes from a desktop view to mobile view the only thing changing will be the screen size and not the content.
+      768px (pixels) is chosen as the minimum width for the device because the smallest tablet screen size in terms of width from the devices on the Google Inspect tool is 768px (pixels).
+      Max-width of 1024px (pixels) was set so the values don't exceed onto devices above 768px (pixels) and cancel out the values given to the media query for desktop screens. */   
+   
+   body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Lato", sans-serif}
+   /* Body elements and all <h> elements from 1 to 6 have been given the font-family "Lato", but if the browser(s) does not support it, they will use "sans-serif" font. */
+     
+   .w3-bar,h1,button {
+      font-family: "Montserrat", sans-serif}
+   /* Elements with the class names w3-bar, h1 and button are given the "Monsterrat" font, but if the browser(s) does not support it, the "sans-serif" font is given to the text on the page. */
+        
+   .w3-top{
+       top:0;
+   }
+   /* Elements with the class name w3-top is given an attribute of 0 meaning that it will not be moved up from its original. current position. */
+     
+   .w3-card-2{
+      box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+   }
+   /* Elements with the class name w3-card-2 is given a shadow around it's container aka the box and given colour values to it using rgba values. */
+        
+   .w3-left-align{
+      text-align:left;
+   }
+   /* Elements with the class name w3-left-align is given the text-align attribute to align text/ content with this tag to the left. */   
+        
+   .w3-large{
+      font-size:18px;
+   }
+   /* Elements that have the w3-large class element have the size of their font increased by 18 (px) pixels. */   
+     
+   .w3-bar-item{
+      width:100%;
+      display:block;
+      padding:8px 16px;
+      text-align:left;
+      border:none;
+      white-space:normal;
+      float:none;
+      outline:0;
+   }
+   /* Elements that contain the w3-bar-item class have been given a width of 100% so it takes up the full space given, given space around the element and its container using padding, makes the element not stand out as the outline is set to 0. Float set to none, meaning it will just be placed where it is told to. Border is set to none which means there is no border around the element,
+      white-space normal allows text to wrap around the element. */   
+     
+   .w3-button{
+      width:100%;
+   }
+   /* Elements with the w3-button class have their widths set to the maximum via the 100%.*/
+     
+   .w3-hide-medium{
+      display:none;
+   }
+   /* Elements with the w3-hide-medium class has the display set to none so that it remains invisible when viewed at a medium screen size such as a tablet.*/   
+     
+   .w3-hide-large{
+      display:none;
+   }
+   /* Elements that possess the w3-hide-large class have their display set to none so they remain invisible when viewed at a large screen size such as a desktop.*/   
+        
+   .w3-right{
+      float:right;
+   }
+   /* Elements with the class w3-right have the element floated to the right which means the element is placed to the right of its container and has text and inline elements wrapped around it. */   
+        
+   .w3-padding-large{
+      padding:12px 24px;
+   }
+   /* Elements with the class w3-padding-large have been given space around the top and bottom of a content and its containers box by 12px, and space around the left and right of the element via 24px with the padding attribute. */   
+        
+   .w3-hover-white:hover{
+      color:#000;
+      background-color:#fff;
+   }
+   /* Elements with the class w3-hover-white:hover is given the colour attribute to give the element colour, then also given background colour for the element too.
+        Colour would only work with it being spelt the American way. */   
+        
+   .w3-red{
+      background-color:#f44336;     
+   }
+   /* Elements that have the w3-red class have been given a background colour which in this case is red as the class name indicates. */
+     
+   .w3-white{
+      background-color:#fff;
+   }
+   /* Elements that have the w3-white class have been given a background colour which in this case is white as the class name indicates. */
+     
+   .w3-hide-small{
+      display:none;
+   }
+   /* Elements with the class w3-hide-small are made invisible using the display attribute being set to none. */
+     
+   .w3-hide{
+      display:none;
+   }
+   /* Elements with the class name w3-hide are made invisible by the display attribute being set to none which means it won't be visible. */
+     
+   .w3-large{
+      font-size:18px;
+   }
+   /* Elements with the class name w3-large has their font size increased by 18px (pixels). */
+        
+   .w3-center{
+      text-align:center;
+   }
+   /* Elements with the class w3-center has the text put in the center of the container using the text-align: center attribute. */
+        
+   .w3-margin{
+      margin:16px;
+   }
+   /* Elements with the w3-marging class is given a margin of 16px (pixels) which creates space around the element(s) with this class name. */   
+     
+   .w3-jumbo{
+      font-size:64px;
+   }
+   /* Elements with the class name w3-jumpo have their font increased by 64px (pixels). */    
+     
+   .w3-padding-64{
+      padding-top:64px;
+   }
+   /* Elements with the class name w3-padding-64 creates space of 64px (pixels) between the top of content such as text and its containers border. */   
+     
+   .w3-content{
+      max-width:980px;
+   }
+   /* Elements with the class name w3-content have the max-width of the element increased to 980px (pixels). */   
+     
+   .w3-padding-32{
+      padding-top:32px;
+   }
+   /* Elements with the class name w3-padding-32 creates space of 32px (pixels) between the top of content such as text and its containers border. */
+        
+   .w3-opacity-max{
+      opacity:0.25;
+   }
+   /* Elements with the class name w3-opacity-max is made less visible, meaning that it is 25% see-through. */
+     
+   .w3-opacity-min{
+      opacity:0.75;
+   }
+   /* Elements with the class name w3-opacity-max is made less visible, meaning that it is 75% see-through. */
+     
+   .w3-xlarge{
+      font-size:24px;
+   }
+   /* Elements with the class name w3-xlarge have their font increased by 24px (pixels). */ 
+     
+   .w3-light-grey{
+      background-color: #616161;
+   }
+   /* Elements that have the w3-light-grey class have been given a background colour which in this case is light grey as the class name indicates. */  
+   
+   .myPhoto{
+      width: 150%;
+   }
+   /* This class is here to adjust the image size on mobile phone screens so that it fits the screen size better instead of being oversized and spreading out to the original image size, which would be bigger than the mobile phone/ tablet screen size.
+      In other words the width being set to 100% allows the image to take up the full amount of space that it has around it, which is benefitial when viewing on a smaller screen as the image may be small if set to a width of a smaller value like 50%. */
+
+   .tablet-text{
+      font-size: 16px;
+      margin-left: 100px;
+      margin-right: -120px;
+   }
+   /* Elements with this class will only be affected during the website being viewed on tablet screens which positions the text on the screen. */
+}
+/* This closing curly brace bracket states the end of the css settings for elements when it's viewed on a screen resolution of 768px (pixels) or more. */ 
+
+/* Desktop screen page settings for viewing the website. */
+@media screen and (min-width: 1025px){
+   body,h1,h2,h3,h4,h5,h6 {
+      font-family: "Lato", sans-serif}
+   /* Body elements and all <h> elements from 1 to 6 have been given the font-family "Lato", but if the browser(s) does not support it, they will use "sans-serif" font. */ 
+        
+   .w3-bar,h1,button {
+      font-family: "Montserrat", sans-serif}
+   /* Elements with the class names w3-bar, h1 and button are given the "Monsterrat" font, but if the browser(s) does not support it, the "sans-serif" font is given to the text on the page. */
+           
+   .w3-top{
+      top:0;
+   }
+   /* Elements with the class name w3-top is given an attribute of 0 meaning that it will not be moved up from its original. current position. */
+        
+   .w3-card-2{
+      box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+   }
+   /* Elements with the class name w3-card-2 is given a shadow around it's container aka the box and given colour values to it using rgba values. */
+           
+   .w3-left-align{
+      text-align:left;
+   }
+   /* Elements with the class name w3-left-align is given the text-align attribute to align text/ content with this tag to the left. */   
+           
+   .w3-large{
+      font-size:18px;
+   }
+   /* Elements that have the w3-large class element have the size of their font increased by 18 (px) pixels. */   
+        
+   .w3-bar-item{
+      width:100%;
+      display:block;
+      padding:8px 16px;
+      text-align:left;
+      border:none;
+      white-space:normal;
+      float:none;
+      outline:0;
+   }
+   /* Elements that contain the w3-bar-item class have been given a width of 100% so it takes up the full space given, given space around the element and its container using padding, makes the element not stand out as the outline is set to 0. Float set to none, meaning it will just be placed where it is told to. Border is set to none which means there is no border around the element,
+      white-space normal allows text to wrap around the element. */   
+        
+   .w3-button{
+      width:100%;
+   }
+   /* Elements with the w3-button class have their widths set to the maximum via the 100%.*/
+        
+   .w3-hide-medium{
+      display:none;
+   }
+   /* Elements with the w3-hide-medium class has the display set to none so that it remains invisible when viewed at a medium screen size such as a tablet.*/   
+        
+   .w3-hide-large{
+      display:none;
+   }
+   /* Elements that possess the w3-hide-large class have their display set to none so they remain invisible when viewed at a large screen size such as a desktop.*/   
+           
+   .w3-right{
+      float:right;
+   }
+   /* Elements with the class w3-right have the element floated to the right which means the element is placed to the right of its container and has text and inline elements wrapped around it. */   
+           
+   .w3-padding-large{
+      padding:12px 24px;
+   }
+   /* Elements with the class w3-padding-large have been given space around the top and bottom of a content and its containers box by 12px, and space around the left and right of the element via 24px with the padding attribute. */   
+           
+   .w3-hover-white:hover{
+      color:#000;
+      background-color:#fff;
+   }
+   /* Elements with the class w3-hover-white:hover is given the colour attribute to give the element colour, then also given background colour for the element too.
+      Colour would only work with it being spelt the American way. */   
+           
+   .w3-red{
+      background-color:#f44336;     
+   }
+   /* Elements that have the w3-red class have been given a background colour which in this case is red as the class name indicates. */
+        
+   .w3-white{
+      background-color:#fff;
+   }
+   /* Elements that have the w3-white class have been given a background colour which in this case is white as the class name indicates. */
+        
+   .w3-hide-small{
+      display:none;
+   }
+   /* Elements with the class w3-hide-small are made invisible using the display attribute being set to none. */
+        
+   .w3-hide{
+      display:none;
+   }
+   /* Elements with the class name w3-hide are made invisible by the display attribute being set to none which means it won't be visible. */
+        
+   .w3-large{
+      font-size:18px;
+   }
+   /* Elements with the class name w3-large has their font size increased by 18px (pixels). */
+           
+   .w3-center{
+      text-align:center;
+   }
+   /* Elements with the class w3-center has the text put in the center of the container using the text-align: center attribute. */
+           
+   .w3-margin{
+      margin:16px;
+   }
+   /* Elements with the w3-marging class is given a margin of 16px (pixels) which creates space around the element(s) with this class name. */   
+        
+   .w3-jumbo{
+      font-size:64px;
+   }
+   /* Elements with the class name w3-jumpo have their font increased by 64px (pixels). */     
+        
+   .w3-padding-64{
+      padding-top:64px;
+   }
+   /* Elements with the class name w3-padding-64 creates space of 64px (pixels) between the top of content such as text and its containers border. */   
+        
+   .w3-content{
+      max-width:980px;
+   }
+   /* Elements with the class name w3-content have the max-width of the element increased to 980px (pixels). */   
+           
+   .w3-padding-32{
+      padding-top:32px;
+   }
+   /* Elements with the class name w3-padding-32 creates space of 32px (pixels) between the top of content such as text and its containers border. */
+           
+   .w3-opacity-max{
+      opacity:0.25;
+   }
+   /* Elements with the class name w3-opacity-max is made less visible, meaning that it is 25% see-through. */
+        
+   .w3-opacity-min{
+      opacity:0.75;
+   }
+   /* Elements with the class name w3-opacity-max is made less visible, meaning that it is 75% see-through. */
+        
+   .w3-xlarge{
+      font-size:24px;
+   }
+   /* Elements with the class name w3-xlarge have their font increased by 24px (pixels). */ 
+        
+   .w3-light-grey{
+      background-color: #616161;
+   }
+   /* Elements that have the w3-light-grey class have been given a background colour which in this case is light grey as the class name indicates. */
+   .text{
+       text-align: center;
+       margin-right: -290px;
+   }
+   /* Elements in the HTML code that have the text class have their text centered, and pushed away from the right side of the page by -290px (pixels) to arrange them at the middle of the page. This was done due to text-align: center not being able to properly center the text on the page. 
+      This was only done for the website when viewing it on the desktop screen size because on phone without this class on the element, the text is centered perfectly fine, however on desktop the text was too far to the right side of the screen. */
+      .myPhoto{
+         width: 90%;
+         margin-left: 180px;
+      }      
+   /* Elements with the myPhoto class will have their width set to 90% meaning that it takes up 90% of the space available to it.
+      The image has more space on the screen than a mobile phone screen, so on a desktop screen it may be placed somewhere it isn't supposed to be, for example it could be placed on the right of the page instead of the center of the page. 
+      Thererefore 'margin-left' is used as the image stays to the right of the page, and by moving it 180 px(pixels) away from the left it allwos the image to be in the center of the page. */   
+   }
+   /* This closing curly brace bracket states the end of the css settings for elements when it's viewed on a screen resolution of 1025px (pixels) or more. */ 
