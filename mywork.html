@@ -1,0 +1,198 @@
+<!-- The DOCTYPE element at the start of the HTML tells the browser that the document that it loads up is a HTML. -->
+<!DOCTYPE html>
+
+<!-- <html> </html> Tells the browser what is inside the html such as the element below that tells it the language the text on the page(s) needs to be is in English and is written 'en'. -->
+<html lang="en">
+ 
+<!-- The <head> element is where additional information about the page is put in such as the adding external css scripts, external fonts from sites such as Google fonts and the title of the page that will appear on the tab, alongside properties of the size the content can be viewed. -->
+<head>
+
+<!-- The <title> tag shows the title of the HTML document on the broswer tab. -->  
+<title>My Work</title>
+
+<!-- The charset <meta> tag tells the browser to reword the code into text that users can read. -->
+<meta charset="UTF-8">
+
+<!-- The name <meta> tag tells the broswer the measurements of the page so that it doesn't have a bad structure with everything all over the place. -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- The name <meta> tag tells the browser a short description of what the page contains. -->
+<meta name="description" content="About myself page" />
+
+<!-- The <link> element is used here to link (as the name suggests) stylesheets from other external sources such as webpages to be used on this page, and this one is using fonts from Google fonts. -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- The css for this page is in an external stylesheet and is linked to this HTML via the <link> element and identified via the href locating the css file and finding the css stylesheet within the folder and the broswer adds it to this HTML to make the basic HTML have a better structure for the text and images. --> 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<!-- A href elements lets the browser know what page the user would get taken to when clicking on the link. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The </head> tells the browser that the <head> element has come to an end. -->
+</head>
+
+<!-- The <body> element tells the browser what needs to be shown on the page, which in this case will be text and images. -->
+<body>
+
+<!-- Navbar screen elements for desktop screens-->
+
+<!-- The <div> element is used to group content placed within the <div> into one container.
+  The class is used to give the <div> it's unique name so that it can be structured/ layed out better using css. --> 
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+
+    <!-- <a> is an anchor element allows the browser to link another page to this page but instead of going to another page, the element from the other page will be linked to this page which in this case is a button element.  -->
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hover-white">Home</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
+    <a href="mywork.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-white">My Work</a>
+    <a href="contactme.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Me</a>
+  
+  <!-- </div> tells the broswer that this is the end of this <div> container. -->
+  </div>
+
+  <!-- Navbar screen elements for small screens -->
+  <!-- An id element gives a specific style to the element it is given to. -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+  <!-- The javascript function at the end of the line after href:"javascript;void(0);" is telling the browser that the navigation menu bar becomes a toggle navigation menu, given by the title, it will be in the form of a burger menu style. 
+       It also states that the menu bar will appear 'onclick', which in other words means when the user(s) click the menu bar that the navigation menu bar will open. 
+       However, this burger style navigation menu will only appear to users when viewing the website on smaller screens. -->
+
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="aboutme.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
+    <a href="mywork.html" class="w3-bar-item w3-button w3-padding-large">My Work</a>
+    <a href="contactme.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
+  </div>
+</div>
+
+<!-- Header elements-->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+
+  <!-- <h> is used to tell the broswer that the text within <h> and </h> is headings for the page, there is a class added on to it that till be used in javascript to make the text fade in and out when scrolling down or up the page. -->
+  <h1 class="w3-margin w3-jumbo">My Work</h1>
+  <p class="w3-xlarge"> This page contains my websites I've made from university and the ones I've made during the Front-End Plus course at Learning People (so far).</p>
+  
+</header>
+
+<!-- First Grid elements for the first section of text on the about me page.
+     The first div element is the container of the inner divs, in other words the first div tag is the parent div and the divs inside of the parent div are children divs.
+     In this case each div contains different class names as each of them serve a certain purpose inside of the container div (parent div). This goes from the colour of the div container and the colour and layout of the children divs inside of the container. -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="text tablet-text smaller-screen-text">Movie Synopsis website</h1>
+      
+      <!-- The img src is short for image source and after that is the file I have my images in and the name of the image file with that image format that it is in, which in this case is JPEG
+           The alt is an alternate text that describes what the photo is for users if their browser doesn't support JPEG image formats.
+           The class is added so the image can be edited on the page to either be moved or resized/ readjusted. -->
+      <img src="img/movie-synopsis.png" alt="Movie Synopsis Website" class="myPhoto">
+      <p class="w3-padding-32 text tablet-text smaller-screen-text">This was the first website I made for my coursework and it was a simple site made using HTML and CSS. </p>        
+      <p class="w3-padding-32 text tablet-text smaller-screen-text">
+        Here is the link to the site: <a href="https://dmu-p2587267.github.io/Coursework1-ThajeepanRathiharan-P2587267/homepage.html" target="_blank">https://dmu-p2587267.github.io/Coursework1-ThajeepanRathiharan-P2587267/homepage.html,</a>
+        and if you're interested here is the link to my repository for this website: <a href="https://github.com/DMU-P2587267/Coursework1-ThajeepanRathiharan-P2587267" target="blank">https://github.com/DMU-P2587267/Coursework1-ThajeepanRathiharan-P2587267.</a></h5>
+      </p>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid elements for the second section of text on the about me page. 
+     Like the previous divs used in the text section above, the divs in the second half of the page are used the same way to create a container for the text to be placed in and how the text is layed out on the page. -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1 class="text tablet-text smaller-screen-text">Anime Encyclopedia</h1>
+      <img src="img/second_year.png" alt="Second Year Website" class="myPhoto">
+      <h5 class="w3-padding-32 text tablet-text smaller-screen-text">This was my second site I made in my second year of university for coursework where we were introduced to JavaScript, and using it to make a card flip/ card matching game.
+        This was hard for me at that time because I was just introduced to JavaScript and I hit a few dead ends but with the teacher I had there who helped me with my coding errors and helped me fix those errors. This site was made using HTML and CSS heavily, but JavaScript was used to make the card flip game work.
+    <h5 class="w3-padding-32 text tablet-text smaller-screen-text">    
+        Here is the link to the site: <a href="https://dmu-p2587267.github.io/TECH2015_CW2/homepage.html" target="_blank">https://dmu-p2587267.github.io/TECH2015_CW2/homepage.html,</a>
+        and if you're interested here is the link to my repository for this website: <a href="https://github.com/DMU-P2587267/TECH2015_CW2" target="blank">https://github.com/DMU-P2587267/TECH2015_CW2.</a></h5>
+      </h5>
+    </div>
+  </div>
+</div>
+
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1 class="text tablet-text smaller-screen-text">Insomnia interactive story</h1>
+        <img src="img/interactive_story.png" alt="Interactive Story" class="myPhoto">
+        <!-- The img src is short for image source and after that is the file I have my images in and the name of the image file with that image format that it is in, which in this case is JPEG
+             The alt is an alternate text that describes what the photo is for users if their browser doesn't support JPEG image formats.
+             The class is added so the image can be edited on the page to either be moved or resized/ readjusted. -->
+        <p class="w3-padding-32 text tablet-text smaller-screen-text">This was my final website I made at university where we were tasked to create an interactive story where the user either scrolls down a page and the story plays out, or they click on a button and the story plays out.
+            I decided to base this off of a real life experience collecting different point of views of insomnia and made it into an interactive story using HTML, CSS and JavaScript. This project was also made responsive on mobile devices and tablet devices alongside desktop devices.
+            I found this project more challenging than the anime website where I was introduced to JavaScript, but like before I had a helpful teacher who helped me with the issues I had, but I worked on this one more independantly and came up with fixes myself but I can't take all the credit 
+            as my teacher did help me more than once. 
+        <h5 class="w3-padding-32 text tablet-text smaller-screen-text">
+            Here is the link to the site: <a href="https://dmu-p2587267.github.io/Insomnia-Interactive-Story/" target="_blank">https://dmu-p2587267.github.io/Insomnia-Interactive-Story/,</a>
+            and if you're interested here is the link to my repository for this website: <a href="https://github.com/DMU-P2587267/Insomnia-Interactive-Story" target="blank">https://github.com/DMU-P2587267/Insomnia-Interactive-Story.</a></h5>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1 class="text tablet-text smaller-screen-text">Naruto quiz website</h1>
+        <img src="img/quiz.png" alt="Quiz Website" class="myPhoto">
+        <h5 class="w3-padding-32 text tablet-text smaller-screen-text">Here is a piece of my work that I made for my second project in the Front-End Plus course with Learning People where I was tasked to make an quiz or card flip game using HTML, CSS and JavaScript.
+            It would have been easy for me to just copy and paste my card game from my card flip game I made in my second year of university for a coursework I submitted, and it would be cheating. Therefore I decided to challenge myself by making a quiz which was hard, but I managed to get it done in the end.
+            Not only did I make the quiz work, but I also made the website responsive on mobile devices and tablet devices alongside desktop devices. 
+        <h5 class="w3-padding-32 text tablet-text smaller-screen-text">
+            Here is the link to the site: <a href="https://thajeepan-rathiharan.github.io/Module-2-Assessment/" target="_blank">https://thajeepan-rathiharan.github.io/Module-2-Assessment/,</a> 
+            and if you're interested here is the link to my repository for this website: <a href="https://github.com/Thajeepan-Rathiharan/Module-2-Assessment" target="blank">https://github.com/Thajeepan-Rathiharan/Module-2-Assessment.</a></h5>
+        </h5>  
+      </div>
+    </div>
+  </div>  
+
+<!-- Footer element-->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.facebook.com/profile.php?id=100009232941477" class="fa fa-facebook-official w3-hover-opacity"></a>
+    <a href="https://www.instagram.com/thajaht/" class="fa fa-instagram w3-hover-opacity"></a>
+    <a href="https://twitter.com/thajee2002" class="fa fa-twitter w3-hover-opacity"></a>
+    <a href="https://www.linkedin.com/in/thajeepan-rathiharan-188349224/" class="fa fa-linkedin w3-hover-opacity"></a>
+    <a href="https://github.com/Thajeepan-Rathiharan" class="fa fa-github w3-hover-capacity"></a>
+ </div>
+
+ <!-- The <p> element tells the broswer that what comes after this is a paragraph and is used to have text shown. -->  
+  <p>Portfolio website by Thajeepan Rathiharan</p>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+  // The browser gets the current URL the user(s) on with the first line.
+  var currentUrl = window.location.href;
+
+  // Then the browser checks which tab corresponds to the current URL and add the 'w3-white' class for highlighting to let the user(s) know what page they are on.
+  if (currentUrl.includes("index.html")) {
+    document.getElementById("home").classList.add("w3-white");
+  } else if (currentUrl.includes("aboutme.html")) {
+    document.getElementById("about").classList.add("w3-white");
+  } else if (currentUrl.includes("contactme.html")) {
+    document.getElementById("contact").classList.add("w3-white");
+  }
+  // The function below is for when users toggle the menu on small screens, the menu bar will show when the bar is clicked on, and makes the menu bar disappear when clicked on again with the menu isn't needed.
+  // Another thing with the function is that is uses the Id element "navDemo", meaning that elements that have that Id in this HTML code will be affected by this javascript function, which in this case is the div element for the burger navigation menu bar that is made to appear for users that view the website on smaller screens.
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+  // The function is saying that for every element that has the Id "navDemo if the element isn't activated that it shows the menu, and if it is already shown, the shown menu bar gets closed, if not replaced by making it disappear.
+}  
+</script>  
+
+<!-- The </body> ends <body> element telling the broswer that's it for the content on the page. -->
+</body>
+
+<!-- The </html> tag ends what the <html> tag started, and in this case tells the browser that's the end of what it needs to load on the page. --> 
+</html>
